@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #111;
+    /* Elimina el fondo animado arcoíris */
+}
+/* Contenido principal */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    max-width: 900px;
+    width: 90%;
+    margin: auto;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Texto arcoíris llamativo */
+.arcoiris {
+    background: linear-gradient(270deg, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee, #ff0000);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1em;
+    animation: rainbowText 4s linear infinite;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes rainbowText {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    header {
+        font-size: 1.2rem;
+        padding: 1em;
+    }
+
+    main {
+        font-size: 1rem;
+        padding: 1.5em;
+    }
+
+    .arcoiris {
+        font-size: 2.8rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1rem;
+        padding: 0.8em;
+    }
+
+    main {
+        font-size: 0.9rem;
+        padding: 1em;
+    }
+
+    .arcoiris {
+        font-size: 1.8rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
